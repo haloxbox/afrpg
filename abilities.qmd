@@ -2,7 +2,7 @@
 
 ## Ability Scores
 
-Each character will have a score ranging from 3 to 18 in each of the following abilities. A bonus or penalty is associated with each score, as shown on the table below. Each class has a [Prime Requisite](class.qmd#character-classes) ability score, which must be at least 9 in order for the character to become a member of that class; also, there are required minimum and maximum scores for each character race other than Humans, as described under [Character Races](races.qmd#character-races).
+ A bonus or penalty is associated with each score, as shown on the table below.
 
 | Ability Score | Bonus/Penalty |
 |:------:|:------:|
@@ -14,84 +14,32 @@ Each character will have a score ranging from 3 to 18 in each of the following a
 | 16-17 | +2 |
 | 18 | +3 |
 
-**Strength:** As the name implies, this ability measures the character's raw physical power. Strength is the Prime Requisite for [Fighters](class.qmd#fighter). Apply the ability bonus or penalty for Strength to all attack and damage rolls in melee (hand to hand) combat. Note that a penalty here will not reduce damage from a successful attack below one point in any case (see the [Combat](combat.qmd#damage) section for details).
+**Strength:** Raw physical power, modifies melee attack and damage rolls.
 
-**Intelligence:** This is the ability to learn and apply knowledge. Intelligence is the Prime Requisite for [Magic-Users](class.qmd#magic-users). The ability bonus for Intelligence is added to the number of [languages](abilities.qmd#languages) the character is able to learn to read and write; if the character has an Intelligence penalty, he or she cannot read more than a word or two, and will only know his or her native language.
+**Intelligence:** Learning and applying knowledge. Modifies the number of languages your character knows. A penalty indicates that your character is illiterate.
 
-**Wisdom:** A combination of intuition, willpower and common sense. Wisdom is the Prime Requisite for [Clerics](class.qmd#cleric). The Wisdom bonus or penalty may apply to some saving throws vs. magical attacks, particularly those affecting the target's will.
+**Wisdom:** Intuition and willpower. Modifies your save vs. magic.
 
-**Dexterity:** This ability measures the character's quickness and balance as well as aptitude with tools. Dexterity is the Prime Requisite for [Thieves](class.qmd#thief). The Dexterity bonus or penalty is applied to all [attack rolls](combat.qmd#attacking-maneuvers) with missile (ranged) weapons, to the character's [Armor Class](equipment.qmd#armor-and-shields) value, and to the character's [Initiative](combat.qmd#initiative) die roll.
+**Dexterity:** Quickness and balance, modifies ranged attack (but not damage) rolls.
 
-**Constitution:** A combination of general health and vitality. Apply the Constitution bonus or penalty to each hit die rolled by the character. Note that a penalty here will not reduce any hit die roll to less than 1 point.
+**Constitution:** Health and general vitality. Modifies hit point rolls.
 
-**Charisma:** This is the ability to influence or even lead people; those with high Charisma are well-liked, or at least highly respected. Apply the Charisma bonus or penalty to reaction rolls. Also, the number of [retainers](hirelings.qmd#retainers) a character may hire, and the loyalty of those retainers, is affected by Charisma.
+**Charisma:** Ability to influence and lead people. Modifies reaction rolls and the number of [retainers](hirelings.qmd#retainers) a character may hire.
 
-#### Stat Roller
+### Ability Prime Requisite
 
-```{ojs}
-import { generalDice } from "./custom.js"
+All classes have a Prime Requisite attribute. The value of your Prime Requisite may grant an experience point bonus (or penalty):
 
-viewof statRolls = Inputs.button("Roll Stats", {value: null, reduce: () => [generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0)]})
-```
-
-
-```{ojs}
-import { calculateModifier } from "./custom.js"
-{
-    var x = ""
-/*     if (statRolls != null){
-        x = md`<br>${statRolls[0]} &emsp; (${calculateModifier(statRolls[0])}) 
-        <br>${statRolls[1]} &emsp; (${calculateModifier(statRolls[1])})
-        <br>${statRolls[2]} &emsp; (${calculateModifier(statRolls[2])})
-        <br>${statRolls[3]} &emsp; (${calculateModifier(statRolls[3])}) 
-        <br>${statRolls[4]} &emsp; (${calculateModifier(statRolls[4])}) 
-        <br>${statRolls[5]} &emsp; (${calculateModifier(statRolls[5])})`
-    } else {x = md`<br><b>Press button to roll stats<b>`} */
-
-    if (statRolls != null) {
-        x = html`<br><table style="max-width:20%;">
-                    <tr>
-                        <td>${statRolls[0]}</td>
-                        <td>(${calculateModifier(statRolls[0])})</td>
-                    </tr>
-                    <tr>
-                        <td>${statRolls[1]}</td>
-                        <td>(${calculateModifier(statRolls[1])})</td>
-                    </tr>
-                    <tr>
-                        <td>${statRolls[2]}</td>
-                        <td>(${calculateModifier(statRolls[2])})</td>
-                    </tr>
-                    <tr>
-                        <td>${statRolls[3]}</td>
-                        <td>(${calculateModifier(statRolls[3])})</td>
-                    </tr>
-                    <tr>
-                        <td>${statRolls[4]}</td>
-                        <td>(${calculateModifier(statRolls[4])})</td>
-                    </tr>
-                    <tr>
-                        <td>${statRolls[5]}</td>
-                        <td>(${calculateModifier(statRolls[5])})</td>
-                    </tr>
-                `
-    } else {x = md`<br><b>Press button to roll stats<b>`}
-
-    return x
-    } 
-
-```
-
-## Hit Points and Hit Dice
-
-When a character is injured, he or she loses hit points from his or her current total. Note that this does not change the figure rolled, but rather reduces the current total; healing will restore hit points, up to but not exceeding the rolled figure.
-
-When his or her hit point total reaches 0, your character may be dead. This may not be the end for the character; don't tear up the character sheet.
-
-First level characters begin play with a single hit die of the given type, plus the Constitution bonus or penalty, with a **minimum** of 1 hit point. Each time a character gains a level, the player should roll another hit die and add the character's Constitution bonus or penalty, with the result again being a minimum of 1 point. Add this amount to the character's maximum hit points figure. Note that, after 9^th^ level, characters receive a fixed number of hit points each level, as shown in the [advancement table for the class](class.qmd#character-classes), and no longer add the Constitution bonus or penalty.
+| Score | Bonus / Penalty |
+|:------:|:------:|
+| 3-5 | -10% |
+| 6-8 | -5% |
+| 9-12 | 0% |
+| 13-15 | +5% |
+| 16-18 | +10% |
 
 ## Languages
 
-All characters begin the game knowing their native language. In most campaign worlds, Humans all (or nearly all) speak the same language, often called "Common." Each demi-human race has its own language, i.e. Elvish, Dwarvish, or Halfling, and members of the demi-human races begin play knowing both their own language and Common (or the local Human language if it isn't called Common).
+All characters begin the game knowing their native language, often called "Common." Each demi-human race has its own language, i.e. Elvish, Dwarvish, Halfling.
 
-Characters with Intelligence of 13 or higher may choose to begin the game knowing one or more languages other than those given above; the number of additional languages that may be learned is equal to the Intelligence bonus (+1, +2, or +3). Characters may choose to learn other demi-human languages, as well as humanoid languages such as Orc, Goblin, etc. The GM will decide which humanoid languages may be learned. The player may choose to leave one or more bonus language "slots" open, to be filled during play. Some Game Masters may even allow player characters to learn exotic languages such as Dragon; also, "dead" or otherwise archaic languages might be allowed to more scholarly characters.
+Characters with a positive Intelligence modifier begin knowing that many additional languages. Rare, dead, or otherworldly languages count as two languages.

@@ -25,7 +25,7 @@
     "href": "char-creation.html",
     "title": "2  Player Characters",
     "section": "",
-    "text": "How to Create a Player Character\nFirst, you will need a piece of paper to write down the character’s statistics on. You may use a preprinted character sheet if one is available, or you may simply use a piece of notebook paper. An example character is shown below. You should use a pencil to write down all information, as any statistic may change during play.\nRoll 3d6 for each ability score, as described in the Character Abilities section, and write the results after the names of the abilities. Write down the scores in the order you roll them; if you are unhappy with the scores you have rolled, ask your Game Master for advice, as he or she may allow some form of point or score exchanging.\nWrite down the ability score bonus (or penalty) for each score beside the score itself, as shown on the table on the next page.\nChoose a race and class for your character. Your character must meet the Prime Requisite minimum for a class, as described in the Character Classes section, in order to be a member of that class. Also note that there are minimum (and maximum) ability requirements for the various races which must be met, as described in the Character Races section.\n\n\n\n\n\n\nFigure 3.1: Character Information\n\n\n\nWrite down the special abilities of your race and class choices, as described below. If you have chosen to play a Magic-User, ask your Game Master what spell or spells your character knows; it’s up to the Game Master to decide this, but he or she may allow you to choose one or more spells yourself.\nNote on your character sheet that your character has zero (0) experience points (or XP); also you may want to note the number needed to advance to second level, as shown in the table for your class.\nRoll the hit die appropriate for your class, adding your Constitution bonus or penalty, and note the result as your hit points on your character sheet. Note that, should your character have a Constitution penalty, the penalty will not lower any hit die roll below 1 (so if your Character has a -2 penalty for Constitution, and you roll a 2, the total is adjusted to 1).\nRoll for your starting money. Generally your character will start with 3d6 times 10 gold pieces, but ask the Game Master before rolling.\nNow, purchase equipment for your character, as shown in the Equipment section. Write your purchases on your character sheet, and note how much money remains afterward. Make sure you understand the weapon and armor restrictions for your class and race before making your purchases.\nSince you now know what sort of armor your character is wearing, you should note your Armor Class on your character sheet. Don’t forget to add your Dexterity bonus or penalty to the figure.\nLook up your character’s attack bonus (see Table 14.2 in Encounters) and note it on your character sheet. Don’t add your ability bonuses (or penalties) to this figure, as you will add a different bonus (Strength or Dexterity) depending on the sort of weapon you use in combat (i.e. melee or missile weapon).\nAlso look up your saving throws (from the tables near the end of the Encounter or at the appropriate class ) and note them on your character sheet. Adjust the saving throw figures based on your race, if your character is a demi-human (see Character Races). Please note that the saving throw bonuses for demi-humans are presented as “plus” values, to be added to the die roll; for convenience, you may simply subtract them from the saving throw numbers on the character sheet instead.\nFinally, if you haven’t done so already, name your character. This often takes longer than all the other steps combined.",
+    "text": "How to Create a Player Character",
     "crumbs": [
       "Player Characters",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Player Characters</span>"
@@ -36,7 +36,7 @@
     "href": "abilities.html",
     "title": "3  Character Abilities",
     "section": "",
-    "text": "Ability Scores\nEach character will have a score ranging from 3 to 18 in each of the following abilities. A bonus or penalty is associated with each score, as shown on the table below. Each class has a Prime Requisite ability score, which must be at least 9 in order for the character to become a member of that class; also, there are required minimum and maximum scores for each character race other than Humans, as described under Character Races.\nStrength: As the name implies, this ability measures the character’s raw physical power. Strength is the Prime Requisite for Fighters. Apply the ability bonus or penalty for Strength to all attack and damage rolls in melee (hand to hand) combat. Note that a penalty here will not reduce damage from a successful attack below one point in any case (see the Combat section for details).\nIntelligence: This is the ability to learn and apply knowledge. Intelligence is the Prime Requisite for Magic-Users. The ability bonus for Intelligence is added to the number of languages the character is able to learn to read and write; if the character has an Intelligence penalty, he or she cannot read more than a word or two, and will only know his or her native language.\nWisdom: A combination of intuition, willpower and common sense. Wisdom is the Prime Requisite for Clerics. The Wisdom bonus or penalty may apply to some saving throws vs. magical attacks, particularly those affecting the target’s will.\nDexterity: This ability measures the character’s quickness and balance as well as aptitude with tools. Dexterity is the Prime Requisite for Thieves. The Dexterity bonus or penalty is applied to all attack rolls with missile (ranged) weapons, to the character’s Armor Class value, and to the character’s Initiative die roll.\nConstitution: A combination of general health and vitality. Apply the Constitution bonus or penalty to each hit die rolled by the character. Note that a penalty here will not reduce any hit die roll to less than 1 point.\nCharisma: This is the ability to influence or even lead people; those with high Charisma are well-liked, or at least highly respected. Apply the Charisma bonus or penalty to reaction rolls. Also, the number of retainers a character may hire, and the loyalty of those retainers, is affected by Charisma.",
+    "text": "Ability Scores\nA bonus or penalty is associated with each score, as shown on the table below.\nStrength: Raw physical power, modifies melee attack and damage rolls.\nIntelligence: Learning and applying knowledge. Modifies the number of languages your character knows. A penalty indicates that your character is illiterate.\nWisdom: Intuition and willpower. Modifies your save vs. magic.\nDexterity: Quickness and balance, modifies ranged attack (but not damage) rolls.\nConstitution: Health and general vitality. Modifies hit point rolls.\nCharisma: Ability to influence and lead people. Modifies reaction rolls and the number of retainers a character may hire.",
     "crumbs": [
       "Player Characters",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Character Abilities</span>"
@@ -47,7 +47,7 @@
     "href": "abilities.html#ability-scores",
     "title": "3  Character Abilities",
     "section": "",
-    "text": "Ability Score\nBonus/Penalty\n\n\n\n\n3\n-3\n\n\n4-5\n-2\n\n\n6-8\n-1\n\n\n9-12\n0\n\n\n13-15\n+1\n\n\n16-17\n+2\n\n\n18\n+3\n\n\n\n\n\n\n\n\n\n\nStat Roller\n\nimport { generalDice } from \"./custom.js\"\n\nviewof statRolls = Inputs.button(\"Roll Stats\", {value: null, reduce: () =&gt; [generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0),generalDice(3,6,0)]})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { calculateModifier } from \"./custom.js\"\n{\n    var x = \"\"\n/*     if (statRolls != null){\n        x = md`&lt;br&gt;${statRolls[0]} &emsp; (${calculateModifier(statRolls[0])}) \n        &lt;br&gt;${statRolls[1]} &emsp; (${calculateModifier(statRolls[1])})\n        &lt;br&gt;${statRolls[2]} &emsp; (${calculateModifier(statRolls[2])})\n        &lt;br&gt;${statRolls[3]} &emsp; (${calculateModifier(statRolls[3])}) \n        &lt;br&gt;${statRolls[4]} &emsp; (${calculateModifier(statRolls[4])}) \n        &lt;br&gt;${statRolls[5]} &emsp; (${calculateModifier(statRolls[5])})`\n    } else {x = md`&lt;br&gt;&lt;b&gt;Press button to roll stats&lt;b&gt;`} */\n\n    if (statRolls != null) {\n        x = html`&lt;br&gt;&lt;table style=\"max-width:20%;\"&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;${statRolls[0]}&lt;/td&gt;\n                        &lt;td&gt;(${calculateModifier(statRolls[0])})&lt;/td&gt;\n                    &lt;/tr&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;${statRolls[1]}&lt;/td&gt;\n                        &lt;td&gt;(${calculateModifier(statRolls[1])})&lt;/td&gt;\n                    &lt;/tr&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;${statRolls[2]}&lt;/td&gt;\n                        &lt;td&gt;(${calculateModifier(statRolls[2])})&lt;/td&gt;\n                    &lt;/tr&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;${statRolls[3]}&lt;/td&gt;\n                        &lt;td&gt;(${calculateModifier(statRolls[3])})&lt;/td&gt;\n                    &lt;/tr&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;${statRolls[4]}&lt;/td&gt;\n                        &lt;td&gt;(${calculateModifier(statRolls[4])})&lt;/td&gt;\n                    &lt;/tr&gt;\n                    &lt;tr&gt;\n                        &lt;td&gt;${statRolls[5]}&lt;/td&gt;\n                        &lt;td&gt;(${calculateModifier(statRolls[5])})&lt;/td&gt;\n                    &lt;/tr&gt;\n                `\n    } else {x = md`&lt;br&gt;&lt;b&gt;Press button to roll stats&lt;b&gt;`}\n\n    return x\n    }",
+    "text": "Ability Score\nBonus/Penalty\n\n\n\n\n3\n-3\n\n\n4-5\n-2\n\n\n6-8\n-1\n\n\n9-12\n0\n\n\n13-15\n+1\n\n\n16-17\n+2\n\n\n18\n+3\n\n\n\n\n\n\n\n\n\n\nAbility Prime Requisite\nAll classes have a Prime Requisite attribute. The value of your Prime Requisite may grant an experience point bonus (or penalty):\n\n\n\nScore\nBonus / Penalty\n\n\n\n\n3-5\n-10%\n\n\n6-8\n-5%\n\n\n9-12\n0%\n\n\n13-15\n+5%\n\n\n16-18\n+10%",
     "crumbs": [
       "Player Characters",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Character Abilities</span>"
@@ -58,7 +58,7 @@
     "href": "abilities.html#hit-points-and-hit-dice",
     "title": "3  Character Abilities",
     "section": "Hit Points and Hit Dice",
-    "text": "Hit Points and Hit Dice\nWhen a character is injured, he or she loses hit points from his or her current total. Note that this does not change the figure rolled, but rather reduces the current total; healing will restore hit points, up to but not exceeding the rolled figure.\nWhen his or her hit point total reaches 0, your character may be dead. This may not be the end for the character; don’t tear up the character sheet.\nFirst level characters begin play with a single hit die of the given type, plus the Constitution bonus or penalty, with a minimum of 1 hit point. Each time a character gains a level, the player should roll another hit die and add the character’s Constitution bonus or penalty, with the result again being a minimum of 1 point. Add this amount to the character’s maximum hit points figure. Note that, after 9th level, characters receive a fixed number of hit points each level, as shown in the advancement table for the class, and no longer add the Constitution bonus or penalty.",
+    "text": "Hit Points and Hit Dice\nWhen a character is injured, he or she loses hit points from his or her current total.\nWhen his or her hit point total reaches 0, your character may be dead. This may not be the end for the character; don’t tear up the character sheet.",
     "crumbs": [
       "Player Characters",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Character Abilities</span>"
@@ -69,7 +69,7 @@
     "href": "abilities.html#languages",
     "title": "3  Character Abilities",
     "section": "Languages",
-    "text": "Languages\nAll characters begin the game knowing their native language. In most campaign worlds, Humans all (or nearly all) speak the same language, often called “Common.” Each demi-human race has its own language, i.e. Elvish, Dwarvish, or Halfling, and members of the demi-human races begin play knowing both their own language and Common (or the local Human language if it isn’t called Common).\nCharacters with Intelligence of 13 or higher may choose to begin the game knowing one or more languages other than those given above; the number of additional languages that may be learned is equal to the Intelligence bonus (+1, +2, or +3). Characters may choose to learn other demi-human languages, as well as humanoid languages such as Orc, Goblin, etc. The GM will decide which humanoid languages may be learned. The player may choose to leave one or more bonus language “slots” open, to be filled during play. Some Game Masters may even allow player characters to learn exotic languages such as Dragon; also, “dead” or otherwise archaic languages might be allowed to more scholarly characters.",
+    "text": "Languages\nAll characters begin the game knowing their native language, often called “Common.” Each demi-human race has its own language, i.e. Elvish, Dwarvish, Halfling.\nCharacters with a positive Intelligence modifier begin knowing that many additional languages. Rare, dead, or otherworldly languages count as two languages.",
     "crumbs": [
       "Player Characters",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Character Abilities</span>"
@@ -3791,6 +3791,50 @@
     "crumbs": [
       "Appendix",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Character Sheet</span>"
+    ]
+  },
+  {
+    "objectID": "char-creation.html#roll-ability-scores",
+    "href": "char-creation.html#roll-ability-scores",
+    "title": "2  Player Characters",
+    "section": "1. Roll Ability scores",
+    "text": "1. Roll Ability scores\nRoll 3d6 seven times and drop the lowest total. Assign the scores to your Character Abilities in any order, or in-order if you’re cool. If none of your attributes are 14 or higher, you may swap any of your scores with a 14.\nWrite down the ability score bonus (or penalty) for each score beside the score itself, as shown on the table on the Character Abilities page.",
+    "crumbs": [
+      "Player Characters",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Player Characters</span>"
+    ]
+  },
+  {
+    "objectID": "char-creation.html#choose-a-race",
+    "href": "char-creation.html#choose-a-race",
+    "title": "2  Player Characters",
+    "section": "2. Choose a Race",
+    "text": "2. Choose a Race\nChoose a race for your character, see the Character Races section.\nWrite down the special abilities of your race.",
+    "crumbs": [
+      "Player Characters",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Player Characters</span>"
+    ]
+  },
+  {
+    "objectID": "char-creation.html#choose-a-class",
+    "href": "char-creation.html#choose-a-class",
+    "title": "2  Player Characters",
+    "section": "3. Choose a Class",
+    "text": "3. Choose a Class\nChoose a character class for your character, see the Character Classes section.\nWrite down the special abilities of your class. Choose a starting equipment package for your class.",
+    "crumbs": [
+      "Player Characters",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Player Characters</span>"
+    ]
+  },
+  {
+    "objectID": "char-creation.html#miscellany",
+    "href": "char-creation.html#miscellany",
+    "title": "2  Player Characters",
+    "section": "4. Miscellany",
+    "text": "4. Miscellany\n\nMark 0 XP and the amount of XP required for 2nd level.\nRoll the hit die appropriate for your class (re-rolling 1s and 2s), add your Constitution modifier, and note the result as your hit point maximum (minimum of 1 hit point).\nNote your armor class (AC), modified by Dexterity.\nNote your attack bonus, modified by Strength for melee weapons and Dexterity for ranged weapons.\nNote your saving throws.\n\nFinally, name your character.",
+    "crumbs": [
+      "Player Characters",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Player Characters</span>"
     ]
   }
 ]

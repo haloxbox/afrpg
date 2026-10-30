@@ -2,13 +2,22 @@
 
 Absolution Fantasy RPG is a modified game based on the core rules of the **Basic Fantasy Role-Playing Game**, 4th Edition, by Chris Gonnerman and its contributors. The original game is available at [basicfantasy.org](https://www.basicfantasy.org/downloads.html).
 
-The BFRPG core rules material used here is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). This work has been renamed, edited, and expanded as Absolution Fantasy RPG. Adaptations of that CC BY-SA material are distributed under the same license.
+These are my own rules with heavy inspiration by, but not limited to:
 
-Absolution Fantasy RPG is an independent work and is not an official Basic Fantasy RPG publication. This attribution does not imply endorsement by Chris Gonnerman or the Basic Fantasy RPG project. Some included supplements carry separate Open Game License notices, and artwork may have separate rights or permissions; those notices and rights remain in force. Do not assume that all artwork or separately licensed material may be redistributed under the CC BY-SA license.
+* Shadowdark RPG
+* Tales of Argosa
+* Old-School Essentials
+* Dolmenwood
+* Dragonslayer
+* Pathfinder
 
-Some text used in the development of this document was retrieved from Wikipedia, and was originally licensed under the Creative Commons Attribution-ShareAlike 3.0 license.
+> The BFRPG core rules material used here is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). This work has been renamed, edited, and expanded as Absolution Fantasy RPG. Adaptations of that CC BY-SA material are distributed under the same license.
 
-Credits from the PDF:
+> Absolution Fantasy RPG is an independent work and is not an official Basic Fantasy RPG publication. This attribution does not imply endorsement by Chris Gonnerman or the Basic Fantasy RPG project. Some included supplements carry separate Open Game License notices, and artwork may have separate rights or permissions; those notices and rights remain in force. Do not assume that all artwork or separately licensed material may be redistributed under the CC BY-SA license.
+
+> Some text used in the development of this document was retrieved from Wikipedia, and was originally licensed under the Creative Commons Attribution-ShareAlike 3.0 license.
+
+**Basic Fantasy Role-Playing Game** Credits:
 
 ::: {.column-screen-inset-right}
 
@@ -31,4 +40,4 @@ Some tools to check out:
 - Simple [Character Sheet](char_sheet.qmd) tool that comes along with this SRD
 - Another awesome [Character Sheet](https://codex.quest/) tool created by J. Garrett Vorbeck. 
 
-This website was created by John Atom (jmhimara). All its code and unique content are also distributed under the **Creative Commons Attribution-ShareAlike 4.0 International License**. 
+This website was originally created by John Atom (jmhimara). All its code and unique content are also distributed under the **Creative Commons Attribution-ShareAlike 4.0 International License**. 

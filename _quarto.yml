@@ -3,10 +3,9 @@ project:
   output-dir: docs
 
 book:
-  title: "Basic Fantasy RPG, 4th edition"
-  author: "Chris Gonnerman"
-  google-analytics: "G-JS65M33XZB"
-  date: "5/2/2023"  
+  title: "Absolution Fantasy RPG"
+  author: "Halo Xbox"
+  date: "10/30/2026"  
   chapters:
     - index.qmd
     - part: Introduction

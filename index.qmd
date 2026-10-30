@@ -1,15 +1,10 @@
 # Preface {.unnumbered}
 
-**Copyright © 2006-2023 Chris Gonnerman – All Rights Reserved**
+Absolution Fantasy RPG is a modified game based on the core rules of the **Basic Fantasy Role-Playing Game**, 4th Edition, by Chris Gonnerman and its contributors. The original game is available at [basicfantasy.org](https://www.basicfantasy.org/downloads.html).
 
-This is an unnoficial copy of the BFRPG SRD. For the most up to date official version of the BFRPG rules, visit  [basicfantas.org/downloads](https://www.basicfantasy.org/downloads.html). 
+The BFRPG core rules material used here is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). This work has been renamed, edited, and expanded as Absolution Fantasy RPG. Adaptations of that CC BY-SA material are distributed under the same license.
 
-**Basic Fantasy Role-Playing Game**: 
-4th Edition, Release 128
-
-All textual materials in this document, as well as all maps, floorplans, diagrams, charts, and forms included herein, are distributed under the terms of the **Creative Commons Attribution-ShareAlike 4.0 International License**. Most other artwork presented is property of the original artist and is used with permission. Note that you may not publish or otherwise distribute this work as is without permission of the original artists; you must remove all non-licensed artwork before doing so. The full license text can be viewed at:
-
-https://creativecommons.org/licenses/by-sa/4.0/
+Absolution Fantasy RPG is an independent work and is not an official Basic Fantasy RPG publication. This attribution does not imply endorsement by Chris Gonnerman or the Basic Fantasy RPG project. Some included supplements carry separate Open Game License notices, and artwork may have separate rights or permissions; those notices and rights remain in force. Do not assume that all artwork or separately licensed material may be redistributed under the CC BY-SA license.
 
 Some text used in the development of this document was retrieved from Wikipedia, and was originally licensed under the Creative Commons Attribution-ShareAlike 3.0 license.
 
